@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Sandhya\AppData\Local\Temp\testng-eclipse--1099468595\testng-customsuite.xml</span>
+                    <span>C:\Users\Sandhya\AppData\Local\Temp\testng-eclipse--1768423356\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">23 methods,   23 passed</span>
+                    <span class="method-stats">23 methods, 1 failed,   22 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="projectLuma.ProjectLumaFlow" class="method navigator-link" hash-for-method="clickTopMenu">clickTopMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -144,11 +158,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="projectLuma.ProjectLumaFlow" class="method navigator-link" hash-for-method="clickSorter">clickSorter</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="projectLuma.ProjectLumaFlow" class="method navigator-link" hash-for-method="clickTopMenu">clickTopMenu</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -228,6 +237,56 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">projectLuma.ProjectLumaFlow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickTopMenu">
+                  </a> <!-- clickTopMenu -->
+                  <span class="method-name">clickTopMenu</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at projectLuma.LumaSignIn.clickGearSubMenuBag(LumaSignIn.java:155)
+	at projectLuma.ProjectLumaFlow.clickTopMenu(ProjectLumaFlow.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -295,13 +354,6 @@
                   <a name="clickSorter">
                   </a> <!-- clickSorter -->
                   <span class="method-name">clickSorter</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickTopMenu">
-                  </a> <!-- clickTopMenu -->
-                  <span class="method-name">clickTopMenu</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -400,7 +452,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Sandhya\AppData\Local\Temp\testng-eclipse--1099468595\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Sandhya\AppData\Local\Temp\testng-eclipse--1768423356\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -453,95 +505,95 @@ data.addRows(23);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'signinValidInvalid')
 data.setCell(0, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(0, 3, 46065);
+data.setCell(0, 3, 46037);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'changePwd')
+data.setCell(1, 1, 'clickTopMenu')
 data.setCell(1, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(1, 3, 12135);
+data.setCell(1, 3, 21999);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'adddetails')
 data.setCell(2, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(2, 3, 11688);
+data.setCell(2, 3, 11575);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'createAccount')
 data.setCell(3, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(3, 3, 7095);
+data.setCell(3, 3, 10572);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'updateDetails')
+data.setCell(4, 1, 'changePwd')
 data.setCell(4, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(4, 3, 6971);
+data.setCell(4, 3, 9885);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'placeOrder')
+data.setCell(5, 1, 'updateDetails')
 data.setCell(5, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(5, 3, 6434);
+data.setCell(5, 3, 7041);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'placeOrderbtn')
 data.setCell(6, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(6, 3, 5093);
+data.setCell(6, 3, 5090);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'addWishList')
+data.setCell(7, 1, 'placeOrder')
 data.setCell(7, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(7, 3, 4943);
+data.setCell(7, 3, 4280);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'addQuantity')
+data.setCell(8, 1, 'urlContains')
 data.setCell(8, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(8, 3, 4124);
+data.setCell(8, 3, 3697);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'proceedCheckout')
+data.setCell(9, 1, 'signOut')
 data.setCell(9, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(9, 3, 3823);
+data.setCell(9, 3, 3446);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'signOut')
+data.setCell(10, 1, 'addWishList')
 data.setCell(10, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(10, 3, 3765);
+data.setCell(10, 3, 3156);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'myOrder')
+data.setCell(11, 1, 'searchText')
 data.setCell(11, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(11, 3, 3603);
+data.setCell(11, 3, 3030);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'urlContains')
+data.setCell(12, 1, 'myOrder')
 data.setCell(12, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(12, 3, 3445);
+data.setCell(12, 3, 3028);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'searchText')
+data.setCell(13, 1, 'clickCart')
 data.setCell(13, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(13, 3, 3158);
+data.setCell(13, 3, 2566);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'clickTopMenu')
+data.setCell(14, 1, 'setup')
 data.setCell(14, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(14, 3, 3113);
+data.setCell(14, 3, 2176);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'addToCart')
+data.setCell(15, 1, 'proceedCheckout')
 data.setCell(15, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(15, 3, 3074);
+data.setCell(15, 3, 2116);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'clickCart')
+data.setCell(16, 1, 'clickMaterial')
 data.setCell(16, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(16, 3, 2084);
+data.setCell(16, 3, 1343);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'setup')
+data.setCell(17, 1, 'clickSorter')
 data.setCell(17, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(17, 3, 1761);
+data.setCell(17, 3, 1328);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'takeScreenshot')
+data.setCell(18, 1, 'clickPhotoProduct')
 data.setCell(18, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(18, 3, 1680);
+data.setCell(18, 3, 1211);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'clickSorter')
+data.setCell(19, 1, 'continueShopping')
 data.setCell(19, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(19, 3, 1429);
+data.setCell(19, 3, 1141);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'clickPhotoProduct')
+data.setCell(20, 1, 'addQuantity')
 data.setCell(20, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(20, 3, 1367);
+data.setCell(20, 3, 186);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'clickMaterial')
+data.setCell(21, 1, 'takeScreenshot')
 data.setCell(21, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(21, 3, 1262);
+data.setCell(21, 3, 131);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'continueShopping')
+data.setCell(22, 1, 'addToCart')
 data.setCell(22, 2, 'projectLuma.ProjectLumaFlow')
-data.setCell(22, 3, 1129);
+data.setCell(22, 3, 108);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -579,91 +631,93 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">urlContains</span>
-                <span class="method-start">1771 ms</span>
+                <span class="method-start">2184 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">placeOrder</span>
-                <span class="method-start">5217 ms</span>
+                <span class="method-start">5883 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">clickTopMenu</span>
-                <span class="method-start">11657 ms</span>
+                <span class="method-start">10168 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickSorter</span>
-                <span class="method-start">14772 ms</span>
+                <span class="method-start">32183 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickMaterial</span>
-                <span class="method-start">16207 ms</span>
+                <span class="method-start">33512 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickPhotoProduct</span>
-                <span class="method-start">17470 ms</span>
+                <span class="method-start">34860 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addWishList</span>
-                <span class="method-start">18839 ms</span>
+                <span class="method-start">36075 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addQuantity</span>
-                <span class="method-start">23782 ms</span>
+                <span class="method-start">39237 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addToCart</span>
-                <span class="method-start">27911 ms</span>
+                <span class="method-start">39425 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickCart</span>
-                <span class="method-start">30988 ms</span>
+                <span class="method-start">39533 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">proceedCheckout</span>
-                <span class="method-start">33073 ms</span>
+                <span class="method-start">42099 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">adddetails</span>
-                <span class="method-start">36896 ms</span>
+                <span class="method-start">44221 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">updateDetails</span>
-                <span class="method-start">48592 ms</span>
+                <span class="method-start">55796 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">placeOrderbtn</span>
-                <span class="method-start">55564 ms</span>
+                <span class="method-start">62838 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">takeScreenshot</span>
-                <span class="method-start">60661 ms</span>
+                <span class="method-start">67931 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">continueShopping</span>
-                <span class="method-start">62341 ms</span>
+                <span class="method-start">68062 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">searchText</span>
-                <span class="method-start">63473 ms</span>
+                <span class="method-start">69207 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">myOrder</span>
-                <span class="method-start">66633 ms</span>
+                <span class="method-start">72237 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">signOut</span>
-                <span class="method-start">70239 ms</span>
+                <span class="method-start">75268 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">changePwd</span>
-                <span class="method-start">74004 ms</span>
+                <span class="method-start">78724 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createAccount</span>
-                <span class="method-start">86139 ms</span>
+                <span class="method-start">88611 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">signinValidInvalid</span>
-                <span class="method-start">93237 ms</span>
+                <span class="method-start">99183 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

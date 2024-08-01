@@ -5,7 +5,7 @@
     <classes>
       <class name="projectLuma.ProjectLumaFlow">
         <methods>
-          <include name="signinValidInvalid"/>
+          <include name="clickTopMenu"/>
         </methods>
       </class> <!-- projectLuma.ProjectLumaFlow -->
     </classes>

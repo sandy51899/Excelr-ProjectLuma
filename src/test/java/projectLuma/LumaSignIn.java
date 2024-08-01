@@ -143,7 +143,7 @@ public class LumaSignIn
 		
 		act1.moveToElement(gearmenu).build().perform();
 		
-		wait.until(ExpectedConditions.visibilityOf(gearmenu));
+		wait.until(ExpectedConditions.visibilityOf(gearsubmenu));
 
 	}
 	public void clickGearSubMenuBag() throws InterruptedException
@@ -152,7 +152,7 @@ public class LumaSignIn
 		
 		act1.moveToElement(gearsubmenu);
 		act1.click().build().perform();
-		wait.until(ExpectedConditions.visibilityOf(gearsubmenu));
+		wait.until(ExpectedConditions.visibilityOf(sorter));
 	
 	}
 	
@@ -210,19 +210,19 @@ public class LumaSignIn
 		quantity.clear();
 		quantity.sendKeys(qt);
 		
-		Thread.sleep(4000);
+		wait.until(ExpectedConditions.visibilityOf(addTocartBtn));
 	}
 	
 	public void clickAddToCart() throws InterruptedException
 	{
 		addTocartBtn.click();
-		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(cartIcon));
 	}
 	
 	public void clickCartIcon() throws InterruptedException
 	{
 		cartIcon.click();
-		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(CheckOutBtn));
 	}
 	
 	public void clickProToCheckout()

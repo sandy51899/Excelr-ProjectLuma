@@ -55,8 +55,8 @@ public class ProjectLumaFlow {
 		 LumaSignIn sign = new LumaSignIn(driver);
 		 sign.urla();
 		sign.clickOnSignInlink();
-		sign.enteremail("sodasingh34@gmail.com");
-		sign.enterPasswd("perfume@789");
+		sign.enteremail("dolmalais78@gmail.com");
+		sign.enterPasswd("dolmalai@567");
 		sign.clickSigninBtn();
 	 }
 		
@@ -227,14 +227,14 @@ public class ProjectLumaFlow {
 		
 		sign.clickOnSignInlink();
 		sign.enteremail("ama678@gmail.com");
-		sign.enterPasswd("batball@349");
+		sign.enterPasswd("batball@350");
 		sign.clickSigninBtn();
 		sout.clickArrow();
 		sout.clickMyaccount();
 		orinf.ClickChangePwd();
-		orinf.EnterCurrentPwd("batball@349");
-		orinf.EnterNewPwd("batball@350");
-		orinf.EnterConfPwd("batball@350");
+		orinf.EnterCurrentPwd("batball@350");
+		orinf.EnterNewPwd("batball@351");
+		orinf.EnterConfPwd("batball@351");
 		orinf.ClickSaveBtn();
 		orinf.FetchCurrentURL();
 		orinf.SavedMessage();
@@ -250,11 +250,11 @@ public class ProjectLumaFlow {
 		CreateAccountLogout cralogout =new CreateAccountLogout(driver);
 		sign.urla();
 		cracc.clickOnCreateacc();
-		cracc.enterfirstName("shubh");
-		cracc.enterlastName("laim");
-cracc.enteremail("shubhlai78@gmail.com");
-cracc.enterpwd("shubhlai@567");
-cracc.enteconfirmpwd("shubhlai@567");
+		cracc.enterfirstName("shubhra");
+		cracc.enterlastName("laima");
+cracc.enteremail("shubhralai78@gmail.com");
+cracc.enterpwd("shubhralai@560");
+cracc.enteconfirmpwd("shubhralai@560");
 cracc.clickcreatebtn();
 cralogout.clickOnArrow();
 cralogout.clickSignOut();

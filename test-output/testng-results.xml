@@ -1,142 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="23" passed="22" failed="1" skipped="0">
+<testng-results ignored="0" total="23" passed="23" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-01T15:52:00 IST" name="Default suite" finished-at="2024-08-01T15:54:26 IST" duration-ms="145272">
+  <suite started-at="2024-08-01T21:45:22 IST" name="Default suite" finished-at="2024-08-01T21:48:25 IST" duration-ms="182867">
     <groups>
     </groups>
-    <test started-at="2024-08-01T15:52:00 IST" name="Default test" finished-at="2024-08-01T15:54:26 IST" duration-ms="145272">
+    <test started-at="2024-08-01T21:45:22 IST" name="Default test" finished-at="2024-08-01T21:48:25 IST" duration-ms="182867">
       <class name="projectLuma.ProjectLumaFlow">
-        <test-method signature="setup()[pri:0, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:52:01 IST" name="setup" finished-at="2024-08-01T15:52:03 IST" duration-ms="2176" status="PASS">
+        <test-method signature="setup()[pri:0, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:45:22 IST" name="setup" finished-at="2024-08-01T21:45:24 IST" duration-ms="2275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="urlContains()[pri:1, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:52:03 IST" name="urlContains" finished-at="2024-08-01T15:52:06 IST" duration-ms="3697" status="PASS">
+        <test-method signature="urlContains()[pri:1, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:45:24 IST" name="urlContains" finished-at="2024-08-01T21:45:28 IST" duration-ms="3346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlContains -->
-        <test-method signature="placeOrder()[pri:2, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:52:06 IST" name="placeOrder" finished-at="2024-08-01T15:52:11 IST" duration-ms="4280" status="PASS">
+        <test-method signature="placeOrder()[pri:2, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:45:28 IST" name="placeOrder" finished-at="2024-08-01T21:45:33 IST" duration-ms="5577" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrder -->
-        <test-method signature="clickTopMenu()[pri:3, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:52:11 IST" name="clickTopMenu" finished-at="2024-08-01T15:52:33 IST" duration-ms="21999" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getClass()" because "exceptionDriver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getClass()" because "exceptionDriver" is null
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at projectLuma.LumaSignIn.clickGearSubMenuBag(LumaSignIn.java:155)
-at projectLuma.ProjectLumaFlow.clickTopMenu(ProjectLumaFlow.java:70)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="clickTopMenu()[pri:3, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:45:33 IST" name="clickTopMenu" finished-at="2024-08-01T21:45:35 IST" duration-ms="1899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickTopMenu -->
-        <test-method signature="clickSorter()[pri:4, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:52:33 IST" name="clickSorter" finished-at="2024-08-01T15:52:34 IST" duration-ms="1328" status="PASS">
+        <test-method signature="clickSorter()[pri:4, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:45:35 IST" name="clickSorter" finished-at="2024-08-01T21:45:37 IST" duration-ms="2081" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSorter -->
-        <test-method signature="clickMaterial()[pri:5, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:52:34 IST" name="clickMaterial" finished-at="2024-08-01T15:52:35 IST" duration-ms="1343" status="PASS">
+        <test-method signature="clickMaterial()[pri:5, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:45:37 IST" name="clickMaterial" finished-at="2024-08-01T21:45:39 IST" duration-ms="1748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickMaterial -->
-        <test-method signature="clickPhotoProduct()[pri:6, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:52:35 IST" name="clickPhotoProduct" finished-at="2024-08-01T15:52:37 IST" duration-ms="1211" status="PASS">
+        <test-method signature="clickPhotoProduct()[pri:6, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:45:39 IST" name="clickPhotoProduct" finished-at="2024-08-01T21:45:40 IST" duration-ms="1204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickPhotoProduct -->
-        <test-method signature="addWishList()[pri:7, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:52:37 IST" name="addWishList" finished-at="2024-08-01T15:52:40 IST" duration-ms="3156" status="PASS">
+        <test-method signature="addWishList()[pri:7, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:45:40 IST" name="addWishList" finished-at="2024-08-01T21:45:44 IST" duration-ms="4207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addWishList -->
-        <test-method signature="addQuantity()[pri:8, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:52:40 IST" name="addQuantity" finished-at="2024-08-01T15:52:40 IST" duration-ms="186" status="PASS">
+        <test-method signature="addQuantity()[pri:8, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:45:44 IST" name="addQuantity" finished-at="2024-08-01T21:45:45 IST" duration-ms="163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addQuantity -->
-        <test-method signature="addToCart()[pri:9, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:52:40 IST" name="addToCart" finished-at="2024-08-01T15:52:40 IST" duration-ms="108" status="PASS">
+        <test-method signature="addToCart()[pri:9, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:45:45 IST" name="addToCart" finished-at="2024-08-01T21:45:49 IST" duration-ms="4138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCart -->
-        <test-method signature="clickCart()[pri:10, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:52:40 IST" name="clickCart" finished-at="2024-08-01T15:52:43 IST" duration-ms="2566" status="PASS">
+        <test-method signature="clickCart()[pri:10, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:45:49 IST" name="clickCart" finished-at="2024-08-01T21:45:49 IST" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickCart -->
-        <test-method signature="proceedCheckout()[pri:11, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:52:43 IST" name="proceedCheckout" finished-at="2024-08-01T15:52:45 IST" duration-ms="2116" status="PASS">
+        <test-method signature="proceedCheckout()[pri:11, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:45:49 IST" name="proceedCheckout" finished-at="2024-08-01T21:45:51 IST" duration-ms="2259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- proceedCheckout -->
-        <test-method signature="adddetails()[pri:12, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:52:45 IST" name="adddetails" finished-at="2024-08-01T15:52:56 IST" duration-ms="11575" status="PASS">
+        <test-method signature="adddetails()[pri:12, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:45:51 IST" name="adddetails" finished-at="2024-08-01T21:45:58 IST" duration-ms="7221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adddetails -->
-        <test-method signature="updateDetails()[pri:13, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:52:56 IST" name="updateDetails" finished-at="2024-08-01T15:53:03 IST" duration-ms="7041" status="PASS">
+        <test-method signature="updateDetails()[pri:13, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:45:58 IST" name="updateDetails" finished-at="2024-08-01T21:46:02 IST" duration-ms="3204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateDetails -->
-        <test-method signature="placeOrderbtn()[pri:14, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:53:03 IST" name="placeOrderbtn" finished-at="2024-08-01T15:53:08 IST" duration-ms="5090" status="PASS">
+        <test-method signature="placeOrderbtn()[pri:14, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:46:02 IST" name="placeOrderbtn" finished-at="2024-08-01T21:46:02 IST" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrderbtn -->
-        <test-method signature="takeScreenshot()[pri:15, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:53:08 IST" name="takeScreenshot" finished-at="2024-08-01T15:53:09 IST" duration-ms="131" status="PASS">
+        <test-method signature="takeScreenshot()[pri:15, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:46:02 IST" name="takeScreenshot" finished-at="2024-08-01T21:46:02 IST" duration-ms="267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshot -->
-        <test-method signature="continueShopping()[pri:16, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:53:09 IST" name="continueShopping" finished-at="2024-08-01T15:53:10 IST" duration-ms="1141" status="PASS">
+        <test-method signature="continueShopping()[pri:16, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:46:02 IST" name="continueShopping" finished-at="2024-08-01T21:46:08 IST" duration-ms="6246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- continueShopping -->
-        <test-method signature="searchText()[pri:17, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:53:10 IST" name="searchText" finished-at="2024-08-01T15:53:13 IST" duration-ms="3030" status="PASS">
+        <test-method signature="searchText()[pri:17, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:46:08 IST" name="searchText" finished-at="2024-08-01T21:46:12 IST" duration-ms="3363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchText -->
-        <test-method signature="myOrder()[pri:18, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:53:13 IST" name="myOrder" finished-at="2024-08-01T15:53:16 IST" duration-ms="3028" status="PASS">
+        <test-method signature="myOrder()[pri:18, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:46:12 IST" name="myOrder" finished-at="2024-08-01T21:46:15 IST" duration-ms="3339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myOrder -->
-        <test-method signature="signOut()[pri:19, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:53:16 IST" name="signOut" finished-at="2024-08-01T15:53:19 IST" duration-ms="3446" status="PASS">
+        <test-method signature="signOut()[pri:19, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:46:15 IST" name="signOut" finished-at="2024-08-01T21:46:19 IST" duration-ms="3678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signOut -->
-        <test-method signature="changePwd()[pri:20, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:53:19 IST" name="changePwd" finished-at="2024-08-01T15:53:29 IST" duration-ms="9885" status="PASS">
+        <test-method signature="changePwd()[pri:20, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:46:19 IST" name="changePwd" finished-at="2024-08-01T21:46:38 IST" duration-ms="19577" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changePwd -->
-        <test-method signature="createAccount()[pri:21, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:53:29 IST" name="createAccount" finished-at="2024-08-01T15:53:40 IST" duration-ms="10572" status="PASS">
+        <test-method signature="createAccount()[pri:21, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:46:38 IST" name="createAccount" finished-at="2024-08-01T21:47:35 IST" duration-ms="56835" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccount -->
-        <test-method signature="signinValidInvalid()[pri:22, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T15:53:40 IST" name="signinValidInvalid" finished-at="2024-08-01T15:54:26 IST" duration-ms="46037" status="PASS">
+        <test-method signature="signinValidInvalid()[pri:22, instance:projectLuma.ProjectLumaFlow@6340e5f0]" started-at="2024-08-01T21:47:35 IST" name="signinValidInvalid" finished-at="2024-08-01T21:48:25 IST" duration-ms="49746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signinValidInvalid -->

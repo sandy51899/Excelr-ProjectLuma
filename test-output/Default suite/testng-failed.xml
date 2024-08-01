@@ -5,7 +5,16 @@
     <classes>
       <class name="projectLuma.ProjectLumaFlow">
         <methods>
-          <include name="clickTopMenu"/>
+          <include name="continueShopping"/>
+          <include name="updateDetails"/>
+          <include name="changePwd"/>
+          <include name="myOrder"/>
+          <include name="searchText"/>
+          <include name="takeScreenshot"/>
+          <include name="signinValidInvalid"/>
+          <include name="signOut"/>
+          <include name="placeOrderbtn"/>
+          <include name="createAccount"/>
         </methods>
       </class> <!-- projectLuma.ProjectLumaFlow -->
     </classes>

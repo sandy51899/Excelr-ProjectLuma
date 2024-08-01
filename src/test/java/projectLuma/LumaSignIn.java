@@ -13,6 +13,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -30,7 +31,7 @@ public class LumaSignIn
 	}
 	
 	//repository
-	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	@FindBy (xpath="//header[@class='page-header']/descendant::li[2]/child::a") WebElement signinlink;
 	@FindBy (id="email")WebElement emal;
 	@FindBy (id="pass")WebElement passd;
@@ -143,23 +144,26 @@ public class LumaSignIn
 		
 		act1.moveToElement(gearmenu).build().perform();
 		
-		wait.until(ExpectedConditions.visibilityOf(gearsubmenu));
+		wait.until(ExpectedConditions.visibilityOf(gearmenu));
 
 	}
 	public void clickGearSubMenuBag() throws InterruptedException
 	{
+		wait.until(ExpectedConditions.visibilityOf(gearsubmenu));
       Actions act1 = new Actions(driver);
 		
 		act1.moveToElement(gearsubmenu);
 		act1.click().build().perform();
-		wait.until(ExpectedConditions.visibilityOf(sorter));
+		
 	
 	}
 	
 	public void sorterDropdown()
 	{
+		wait.until(ExpectedConditions.visibilityOf(sorter));
 		Select scpname = new Select(sorter);
 		scpname.selectByVisibleText( "Price");
+		
 	}
 	
 	
@@ -207,26 +211,30 @@ public class LumaSignIn
 	
 	public void addQuantity(String qt) throws InterruptedException
 	{
+		wait.until(ExpectedConditions.visibilityOf(quantity));
 		quantity.clear();
 		quantity.sendKeys(qt);
 		
-		wait.until(ExpectedConditions.visibilityOf(addTocartBtn));
+		
 	}
 	
 	public void clickAddToCart() throws InterruptedException
 	{
+		wait.until(ExpectedConditions.visibilityOf(addTocartBtn));
 		addTocartBtn.click();
-		wait.until(ExpectedConditions.visibilityOf(cartIcon));
+		Thread.sleep(4000);;
 	}
 	
 	public void clickCartIcon() throws InterruptedException
 	{
+		wait.until(ExpectedConditions.visibilityOf(cartIcon));
 		cartIcon.click();
-		wait.until(ExpectedConditions.visibilityOf(CheckOutBtn));
+		
 	}
 	
 	public void clickProToCheckout()
 	{
+		
 		CheckOutBtn.click();
 	}
 	
@@ -275,18 +283,21 @@ public class LumaSignIn
 	{
 		phonenumber.sendKeys(ph);
 		Thread.sleep(5000);
+		
 	}
 	
 	public void clickNextBtn() throws InterruptedException
 	{
+		wait.until(ExpectedConditions.visibilityOf(nextbutton));
 		nextbutton.click();
-		Thread.sleep(5000);
+		
 	}
 	
 	public void clickCheckBox() throws InterruptedException
 	{
+		wait.until(ExpectedConditions.visibilityOf(checkboxAddress));
 		checkboxAddress.click();
-		Thread.sleep(2000);
+		
 	}
 	
 	public void enterCompUpdate(String com)
@@ -327,19 +338,22 @@ public class LumaSignIn
 	
 	public void enterPhoneNumUp(String phup) throws InterruptedException
 	{
+		
 		phonenumberUp.sendKeys(phup);
-		Thread.sleep(4000);
+		
 	}
 	
 	public void clickUpdateBtn()
 	{
+		wait.until(ExpectedConditions.visibilityOf(updatebtn));
 		updatebtn.click();
 	}
 	
 	public void clickPlaceOrBtn() throws InterruptedException
 	{
+		wait.until(ExpectedConditions.visibilityOf(placeorderbtn));
 		placeorderbtn.click();
-		Thread.sleep(5000);
+		
 	}
 	
 	

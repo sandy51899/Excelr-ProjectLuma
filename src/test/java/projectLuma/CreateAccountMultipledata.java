@@ -10,13 +10,24 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class CreateAccountMultipledata {
-
-	public static void main(String[] args) throws IOException, InterruptedException {
-		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	WebDriver driver;
+	
+	 @Test(priority = 0)
+	 public void setup()
+		{
+		 driver = new ChromeDriver();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			
+		}
+		
+	 
+	 @Test(priority=1)
+	 public void createMultipleData() throws IOException, InterruptedException
+	 {
 		LumaSignIn sign = new LumaSignIn(driver);
 		LumaCreateAccount cracc = new LumaCreateAccount(driver);
 		CreateAccountLogout cralogout =new CreateAccountLogout(driver);

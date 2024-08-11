@@ -3,20 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="projectLuma.ProjectLumaFlow">
+      <class name="projectLuma.CreateAccountMultipledata">
         <methods>
-          <include name="continueShopping"/>
-          <include name="updateDetails"/>
-          <include name="changePwd"/>
-          <include name="myOrder"/>
-          <include name="searchText"/>
-          <include name="takeScreenshot"/>
-          <include name="signinValidInvalid"/>
-          <include name="signOut"/>
-          <include name="placeOrderbtn"/>
-          <include name="createAccount"/>
+          <include name="createMultipleData"/>
         </methods>
-      </class> <!-- projectLuma.ProjectLumaFlow -->
+      </class> <!-- projectLuma.CreateAccountMultipledata -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

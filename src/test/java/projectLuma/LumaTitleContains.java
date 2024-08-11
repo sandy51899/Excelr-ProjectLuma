@@ -1,21 +1,25 @@
 package projectLuma;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 
 public class LumaTitleContains {
 
-	public static void main(String[] args) {
-		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		LumaSignIn sign = new LumaSignIn(driver);
+	WebDriver driver;
+
+	public LumaTitleContains(WebDriver idriver)
+		{
+
+		driver = idriver;
+		PageFactory.initElements(driver, this);
 		
-		sign.urla();
+		}
 		
-String acttitl = driver.getTitle();
+	public void compareTitle()
+	
+	{
+		
+        String acttitl = driver.getTitle();
 		
 		if( acttitl.contains("om"))
 				{
